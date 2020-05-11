@@ -1,9 +1,9 @@
 apt update
-apt install openbox lxdm obconf obmenu qterminal featherpad pcmanfm tint2 gsimplecal feh numlockx lxappearance 
-apt install firefox vlc
+apt install -y openbox lxdm obconf obmenu qterminal featherpad pcmanfm tint2 gsimplecal feh numlockx lxappearance 
+apt install -y firefox vlc
 wget -qO- https://git.io/papirus-icon-theme-install | sh
-apt install build-essential
-apt install dmz-cursor-theme
+apt install -y build-essential
+apt install -y dmz-cursor-theme
 
 wget https://images6.alphacoders.com/320/320424.jpg
 mkdir .wallpaper
