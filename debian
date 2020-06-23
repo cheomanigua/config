@@ -26,3 +26,9 @@ wget https://dl.suckless.org/tools/dmenu-4.9.tar.gz
 tar -xvf dmenu-4.9.tar.gz
 cd dmenu-4.9
 sudo make clean install
+
+cd
+touch .xinitrc
+echo "dwm" > xinitrc
+
+
