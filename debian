@@ -2,7 +2,7 @@
 
 sudo apt update
 sudo apt install git make vim xserver-xorg xinit apt-transport-https curl libx11-dev libxft-dev libxinerama-dev lynx zathura ranger -y
-sudo apt install network-manager wpasupplicant
+sudo apt install network-manager wpasupplicant -y
 
 mkdir dwm
 cd dwm
