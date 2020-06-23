@@ -1,7 +1,8 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt install git make vim xserver-xorg xinit apt-transport-https curl libx11-dev libxft-dev libxinerama-dev lynx zathura ranger network-manager -y
+sudo apt install git make vim xserver-xorg xinit apt-transport-https curl libx11-dev libxft-dev libxinerama-dev lynx zathura ranger -y
+sudo apt install network-manager wpasupplicant
 
 mkdir dwm
 cd dwm
