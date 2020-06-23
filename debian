@@ -28,6 +28,11 @@ echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable ma
 sudo apt update
 sudo apt install brave-browser -y
 
+cd Downloads
+wget https://zoom.us/client/latest/zoom_amd64.deb
+sudo dpkg -i zoom_amd64.deb
+sudo apt install -f -y
+
 setxkbmap es
 sudo chown -R $USER:$USER dwm
 mv dwm/ .config/
