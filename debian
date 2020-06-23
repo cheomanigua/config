@@ -3,14 +3,7 @@
 sudo apt update
 sudo apt install git make xserver-xorg xinit apt-transport-https curl libx11-dev libxft-dev libxinerama-dev zathura ranger -y
 
-curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
-echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-sudo apt update
-sudo apt install brave-browser -y
-
 cd
-
-mkdir .config
 cd .config
 mkdir dwm
 cd dwm
@@ -30,3 +23,9 @@ sudo make clean install
 cd
 touch .xinitrc
 echo "dwm" > .xinitrc
+
+
+curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+sudo apt update
+sudo apt install brave-browser -y
