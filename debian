@@ -29,6 +29,4 @@ sudo make clean install
 
 cd
 touch .xinitrc
-echo "dwm" > xinitrc
-
-
+echo "dwm" > .xinitrc
