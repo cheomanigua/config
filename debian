@@ -11,7 +11,7 @@ sudo apt install brave-browser -y
 cd
 
 mkdir .config
-cd config
+cd .config
 mkdir dwm
 cd dwm
 git clone git://git.suckless.org/dwm
