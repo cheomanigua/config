@@ -29,3 +29,5 @@ sudo apt update
 sudo apt install brave-browser -y
 
 setxkbmap es
+sudo chown -R $USER:$USER dwm
+mv dwm/ .config/
