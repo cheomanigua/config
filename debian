@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt install git make xserver-xorg xinit apt-transport-https curl libx11-dev libxft-dev libxinerama-dev zathura ranger -y
+sudo apt install git make xserver-xorg xinit apt-transport-https curl libx11-dev libxft-dev libxinerama-dev lynx zathura ranger -y
 
 mkdir dwm
 cd dwm
