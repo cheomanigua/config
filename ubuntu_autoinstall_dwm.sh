@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt install vim xserver-xorg xinit lynx zathura ranger -y
+sudo apt install vim xserver-xorg xinit lynx zathura ranger feh -y
 sudo apt install network-manager -y
 sudo apt install git make libx11-dev libxft-dev libxinerama-dev -y
 sudo apt install apt-transport-https curl -y
