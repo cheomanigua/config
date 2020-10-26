@@ -16,9 +16,9 @@ git clone git://git.suckless.org/st
 cd st
 sudo make clean install
 cd ..
-wget https://dl.suckless.org/tools/dmenu-4.9.tar.gz
-tar -xvf dmenu-4.9.tar.gz
-cd dmenu-4.9
+wget https://dl.suckless.org/tools/dmenu-5.0.tar.gz
+tar -xvf dmenu-5.0.tar.gz
+cd dmenu-5.0
 sudo make clean install
 
 cd

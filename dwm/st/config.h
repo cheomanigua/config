@@ -101,7 +101,7 @@ static const char *colorname[] = {
 	"green3",
 	"yellow3",
 	"royalblue",
-	"magenta3",
+	"yellow3",
 	"cyan3",
 	"gray90",
 

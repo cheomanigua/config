@@ -36,7 +36,7 @@ export SEP2="]"
 #. "$DIR/bar-functions/dwm_pulse.sh"
 ##. "$DIR/bar-functions/dwm_weather.sh"
 ##. "$DIR/bar-functions/dwm_vpn.sh"
-. "$DIR/bar-functions/dwm_networkmanager.sh"
+######. "$DIR/bar-functions/dwm_networkmanager.sh"
 ##. "$DIR/bar-functions/dwm_keyboard.sh"
 #. "$DIR/bar-functions/dwm_ccurse.sh"
 . "$DIR/bar-functions/dwm_date.sh"
@@ -53,6 +53,6 @@ export SEP2="]"
 
 while true
 do
-  xsetroot -name "$(dwm_resources) $(dwm_networkmanager) $(dwm_date)"
+  xsetroot -name "$(dwm_resources) $(dwm_date)"
   sleep 1
 done
