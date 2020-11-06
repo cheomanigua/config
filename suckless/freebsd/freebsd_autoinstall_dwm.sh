@@ -1,13 +1,6 @@
 #!/bin/sh
 
-### Downloading the files
-
-# cd
-# git clone https://github.com/cheomanigua/config.git
-# mv config/suckless/freebsd .
-# mv freebsd/freebsd_autoinstall_dwm.sh .
-# chmod +x freebsd_autoinstall_dwm.sh
-# ./freebsd_autoinstall_dwm.sh
+sudo pkg install --y xorg wget git
 
 ### Install and configure dwm
 
@@ -50,23 +43,9 @@ cd
 sudo pkg install --y feh py37-ranger zathura zathura-pdf-poppler simplescreenrecorder pulseaudio pavucontrol py37-ansible vscode 
 
 
-### Some /etc/rc.conf configuration
-### Disabling sendmail and enabling time 
-cat <<EOT >> /etc/rc.conf
-# Disabling sendmail
-sendmail_enable="NO"
-sendmail_submit_enable="NO"
-sendmail_outbound_enable="NO"
-sendmail_msp_queue_enable="NO"
-
-# Enabling time sync
-ntpd_enable="YES"
-ntpd_sync_on_start="YES"
-EOT
-
-
 ### Creating and configuring .xinitrc
 cat <<EOT >> .xinitrc
+mv freebsd/wallpaper.jpg .
 setxkbmap es
 feh --bg-scale wallpaper.jpg &
 freebsd/dwm-bar/dwm_bar.sh &
