@@ -2,10 +2,11 @@
 
 ### Downloading the files
 
-cd
-git clone https://github.com/cheomanigua/config.git
-mv config/suckless/freebsd .
-
+# cd
+# git clone https://github.com/cheomanigua/config.git
+# mv config/suckless/freebsd .
+# mv freebsd/freebsd_autoinstall_dwm.sh .
+# ./freebsd_autoinstall_dwm.sh
 
 ### Install and configure dwm
 
@@ -40,6 +41,6 @@ sudo make clean install
 
 cd ..
 git clone https://github.com/joestandring/dwm-bar.git
-cp -r ../freebsd/dwm-bar dwm-bar
+cp -r ../freebsd/dwm-bar/* dwm-bar
 cd
 
