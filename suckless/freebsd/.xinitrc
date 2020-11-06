@@ -1,4 +1,4 @@
 setxkbmap es
-~/.config/suckeless/dwm-bar/dwm_bar.sh &
-feh --bg-scale wallpaper.jpg
+feh --bg-scale freebsd/wallpaper.jpg
+./freebsd/suckless/dwm-bar/dwm_bar.sh &
 exec dwm
