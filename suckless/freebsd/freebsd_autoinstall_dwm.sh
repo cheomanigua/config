@@ -41,8 +41,16 @@ cd
 
 ### Install several packages
 
-sudo pkg install --y feh py37-ranger zathura zathura-pdf-poppler simplescreenrecorder pulseaudio pavucontrol py37-ansible vscode 
+sudo pkg install --y coreutils feh py37-ranger zathura zathura-pdf-poppler simplescreenrecorder pulseaudio pavucontrol py37-ansible vscode 
 
+
+### Enabling colored terminal for .sh shell
+cat <<EOT >> .shrc
+alias ls='gls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+EOT
 
 ### Creating and configuring .xinitrc
 mv freebsd/wallpaper.jpg .
