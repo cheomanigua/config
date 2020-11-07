@@ -4,6 +4,7 @@ sudo pkg install --y xorg wget git
 
 ### Install and configure dwm
 
+cd
 mkdir suckless
 cd suckless
 git clone https://git.suckless.org/dwm
@@ -44,8 +45,8 @@ sudo pkg install --y feh py37-ranger zathura zathura-pdf-poppler simplescreenrec
 
 
 ### Creating and configuring .xinitrc
-cat <<EOT >> .xinitrc
 mv freebsd/wallpaper.jpg .
+cat <<EOT >> .xinitrc
 setxkbmap es
 feh --bg-scale wallpaper.jpg &
 freebsd/dwm-bar/dwm_bar.sh &
