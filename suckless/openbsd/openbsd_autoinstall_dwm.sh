@@ -32,6 +32,7 @@ cd ..
 wget https://dl.suckless.org/tools/dmenu-5.0.tar.gz
 tar -zxvf dmenu-5.0.tar.gz
 cd dmenu-5.0
+cp ../../openbsd/dmenu/* .
 doas make clean install
 
 
