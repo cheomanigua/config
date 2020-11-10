@@ -53,6 +53,8 @@ openbsd/dwm-bar/dwm_bar.sh &
 exec dwm
 EOT
 
+### Add Spanish keyboard support
+echo "export LANG=en_US.UTF-8" >> .profile
 
 #curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | doas apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
 #echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | doas tee /etc/apt/sources.list.d/brave-browser-release.list
