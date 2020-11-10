@@ -3,7 +3,7 @@
 # A dwm_bar function to display information regarding system memory, CPU temperature, and storage
 # Joe Standring <git@joestandring.com>
 # GNU GPLv3
-SCRIPT_PATH="test.sh"
+
 dwm_resources () {
   # Storaged Used/Total
   STOUSED=$(df -h | grep '/dev/sda1' | awk '{print $3}')
