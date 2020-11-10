@@ -54,7 +54,7 @@ doas pkg_add git
 git clone https://github.com/cheomanigua/config.git
 mv config/suckless/openbsd .
 mv openbsd/openbsd_autoinstall_dwm.sh .
-./openbsd_autoinstall_dwm.sh
+sh openbsd_autoinstall_dwm.sh
 ```
 
 ### Cleaning up
