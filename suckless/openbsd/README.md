@@ -36,7 +36,7 @@ doas ifconfig rtwn0 up
 ifconfig rtwn0 scan | less
 ```
 
-4. Edit `/etc/hostname.rtwn0`
+4. Edit/create `/etc/hostname.rtwn0`
 ```
 nwid [SSID] wpakey [PASSWORD]
 dhcp
@@ -50,6 +50,7 @@ As a user, run these commands:
 
 ```
 cd
+doas pkg_add git
 git clone https://github.com/cheomanigua/config.git
 mv config/suckless/openbsd .
 mv openbsd/openbsd_autoinstall_dwm.sh .
