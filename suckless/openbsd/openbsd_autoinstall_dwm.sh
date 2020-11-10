@@ -30,7 +30,7 @@ doas make clean install
 
 cd ..
 wget https://dl.suckless.org/tools/dmenu-5.0.tar.gz
-tar -xvf dmenu-5.0.tar.gz
+tar -zxvf dmenu-5.0.tar.gz
 cd dmenu-5.0
 doas make clean install
 
