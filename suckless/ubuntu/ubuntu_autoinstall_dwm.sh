@@ -57,7 +57,7 @@ mv ubuntu/wallpaper.jpg .
 cat <<EOT >> .xinitrc
 setxkbmap es
 feh --bg-scale wallpaper.jpg &
-ubuntu/dwm-bar/dwm_bar.sh &
+suckless/dwm-bar/dwm_bar.sh &
 exec dwm
 EOT
 

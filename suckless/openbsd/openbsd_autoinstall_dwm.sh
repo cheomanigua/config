@@ -49,7 +49,7 @@ mv openbsd/wallpaper.jpg .
 cat <<EOT >> .xinitrc
 setxkbmap es
 feh --bg-scale wallpaper.jpg &
-openbsd/dwm-bar/dwm_bar.sh &
+suckless/dwm-bar/dwm_bar.sh &
 exec dwm
 EOT
 
