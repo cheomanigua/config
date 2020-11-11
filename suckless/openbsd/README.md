@@ -38,7 +38,7 @@ ifconfig rtwn0 scan | less
 
 4. Edit/create `/etc/hostname.rtwn0`
 ```
-nwid [SSID] wpakey [PASSWORD]
+join [SSID] wpakey [PASSWORD]
 dhcp
 ```
 

@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/bin/ksh
 
 # If you are running this script, it is because you ran git clone https://github.com/cheomanigua/config.git
 # and run cd config
 
 doas pkg_add wget coreutils ranger feh
-
+doas chown -R $USER:$USER config
 
 ### Install and configure dwm
 
@@ -55,8 +55,11 @@ EOT
 
 ### Add Spanish keyboard support
 cat <<EOT >> .profile
+export PATH HOME TERM
 export LANG=en_US.UTF-8
 export ENV=$HOME/.kshrc
+
+alias ls='ls -lah'
 EOT
 
 ### Create .kshrc

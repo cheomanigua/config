@@ -4,7 +4,7 @@
 # and run cd config
 
 sudo apt update
-sudo apt install vim xserver-xorg xinit lynx zathura ranger feh -y
+sudo apt install vim xserver-xorg xinit -y
 sudo apt install network-manager -y
 sudo apt install git make libx11-dev libxft-dev libxinerama-dev -y
 sudo apt install apt-transport-https curl -y
@@ -49,7 +49,7 @@ cd
 
 ### Install several packages
 
-sudo apt install -y feh ranger zathura simplescreenrecorder curl pulseaudio pavucontrol ansible vscode 
+sudo apt install -y feh ranger zathura simplescreenrecorder curl lynx pulseaudio pavucontrol ansible vscode 
 
 
 ### Creating and configuring .xinitrc
