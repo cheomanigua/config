@@ -55,6 +55,7 @@ EOT
 
 ### Add Spanish keyboard support
 cat <<EOT >> .profile
+export TERM=screen-256color
 export PATH HOME TERM
 export LANG=en_US.UTF-8
 export ENV=$HOME/.kshrc
