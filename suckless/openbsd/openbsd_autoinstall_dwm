@@ -4,7 +4,7 @@
 # and run cd config
 
 doas pkg_add wget coreutils ranger feh
-doas chown -R $USER:$USER config
+
 
 ### Install and configure dwm
 
@@ -13,16 +13,16 @@ mkdir suckless
 cd suckless
 git clone git://git.suckless.org/dwm
 cd dwm
-cp ../../openbsd/dwm/* .
+cp ../../config/suckless/openbsd/dwm/* .
 doas make clean install
 
 
-### Install and confiture st
+### Install and configure st
 
 cd ..
 git clone git://git.suckless.org/st
 cd st
-cp ../../openbsd/st/* .
+cp ../../config/suckless/openbsd/st/* .
 doas make clean install
 
 
@@ -32,7 +32,7 @@ cd ..
 wget https://dl.suckless.org/tools/dmenu-5.0.tar.gz
 tar -zxvf dmenu-5.0.tar.gz
 cd dmenu-5.0
-cp ../../openbsd/dmenu/* .
+cp ../../config/suckless/openbsd/dmenu/* .
 doas make clean install
 
 
@@ -40,12 +40,12 @@ doas make clean install
 
 cd ..
 git clone https://github.com/joestandring/dwm-bar.git
-cp -r ../openbsd/dwm-bar/* dwm-bar
+cp -r ../config/suckless/openbsd/dwm-bar/* dwm-bar
 cd
 
 
 ### Creating and configuring .xinitrc
-mv openbsd/wallpaper.jpg .
+mv config/suckless/openbsd/wallpaper.jpg .
 cat <<EOT >> .xinitrc
 setxkbmap es
 feh --bg-scale wallpaper.jpg &
@@ -63,7 +63,7 @@ alias ls='ls -lah'
 EOT
 
 ### Create .kshrc
-mv openbsd/.kshrc .
+mv config/suckless/openbsd/.kshrc .
 doas chown $USER:$USER .kshrc
 
 #curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | doas apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -

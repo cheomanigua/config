@@ -29,17 +29,18 @@ As a user, run these commands:
 ```
 cd
 git clone https://github.com/cheomanigua/config.git
-mv config/suckless/freebsd .
-mv freebsd/freebsd_autoinstall_dwm.sh rc_conf .
-./freebsd_autoinstall_dwm.sh
+sudo chown -R $USER:$USER config
+mv config/suckless/freebsd/freebsd_autoinstall_dwm rc_conf .
+./freebsd_autoinstall_dwm
 sudo ./rc_conf
 ```
 
 ### Cleaning up
 
-Once the configuration is finished, you can delete the following directories:
-- `config`
-- `freebsd`
+Once the configuration is finished, you can delete the following directory and files:
+- `config/`
+- `freebsd_autoinstall_dwm`
+- `rc_conf`
 
 Also, don't forget revoke the privilege of not using password for `sudo` to the user:
 

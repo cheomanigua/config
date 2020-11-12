@@ -52,16 +52,16 @@ As a user, run these commands:
 cd
 doas pkg_add git
 git clone https://github.com/cheomanigua/config.git
-mv config/suckless/openbsd .
-mv openbsd/openbsd_autoinstall_dwm.sh .
-sh openbsd_autoinstall_dwm.sh
+doas chown -R $USER:$USER config
+mv config/suckless/openbsd/openbsd_autoinstall_dwm .
+sh openbsd_autoinstall_dwm
 ```
 
 ### Cleaning up
 
-Once the configuration is finished, you can delete the following directories:
-- `config`
-- `openbsd`
+Once the configuration is finished, you can delete the following directory and file:
+- `config/`
+- `openbsd_autoinstall_dwm`
 
 #### .xinitrc
 

@@ -30,16 +30,16 @@ As a user, run these commands:
 ```
 cd
 git clone https://github.com/cheomanigua/config.git
-mv config/suckless/ubuntu .
-mv ubuntu/ubuntu_autoinstall_dwm.sh .
-./ubuntu_autoinstall_dwm.sh
+sudo chown -R $USER:$USER config
+mv config/suckless/ubuntu/ubuntu_autoinstall_dwm .
+./ubuntu_autoinstall_dwm
 ```
 
 ### Cleaning up
 
-Once the configuration is finished, you can delete the following directories:
-- `config`
-- `ubuntu`
+Once the configuration is finished, you can delete the following directory and file:
+- `config/`
+- `ubuntu_autoinstall_dwm`
 
 #### .xinitrc
 

@@ -9,7 +9,7 @@ mkdir suckless
 cd suckless
 git clone https://git.suckless.org/dwm
 cd dwm
-cp ../../freebsd/dwm/* .
+cp ../../config/suckless/freebsd/dwm/* .
 sudo make clean install
 
 
@@ -18,7 +18,7 @@ sudo make clean install
 cd ..
 git clone git://git.suckless.org/st
 cd st
-cp ../../freebsd/st/* .
+cp ../../config/suckless/freebsd/st/* .
 sudo make clean install
 
 
@@ -28,7 +28,7 @@ cd ..
 wget https://dl.suckless.org/tools/dmenu-5.0.tar.gz
 tar -xvf dmenu-5.0.tar.gz
 cd dmenu-5.0
-cp ../../freebsd/dmenu/* .
+cp ../../config/suckless/freebsd/dmenu/* .
 sudo make clean install
 
 
@@ -36,7 +36,7 @@ sudo make clean install
 
 cd ..
 git clone https://github.com/joestandring/dwm-bar.git
-cp -r ../freebsd/dwm-bar/* dwm-bar
+cp -r ../config/suckless/freebsd/dwm-bar/* dwm-bar
 cd
 
 ### Install several packages
@@ -53,7 +53,7 @@ alias egrep='egrep --color=auto'
 EOT
 
 ### Creating and configuring .xinitrc
-mv freebsd/wallpaper.jpg .
+mv config/suckless/freebsd/wallpaper.jpg .
 cat <<EOT >> .xinitrc
 setxkbmap es
 feh --bg-scale wallpaper.jpg &
@@ -61,4 +61,4 @@ suckless/dwm-bar/dwm_bar.sh &
 exec dwm
 EOT
 
-
+echo "Installation finished !!!. Don't forget to run now sudo ./rc_conf"
