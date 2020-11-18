@@ -25,9 +25,9 @@ nmcli d wifi connect <SSID> password <PASSWORD>
 
 ### Keyboard locale
 
-This script set a Spanish keyboard. 
+This script sets a Spanish keyboard. 
 - If you are using an English keyboard, edit the `ubuntu_autoinstall_dwm` file and delete the line `setxkbmap es`
-- If you are using a non English keyboard, edit the `ubuntu_autoinstall_dwm` file and change the line `setxkbmap es` to `sexkbmap <language\>
+- If you are using a non English keyboard, edit the `ubuntu_autoinstall_dwm` file and change the line `setxkbmap es` to `sexkbmap <language\>`
 
 ### Ready to use the script
 
