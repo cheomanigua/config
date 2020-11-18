@@ -44,6 +44,12 @@ dhcp
 
 5. Reboot
 
+### Keyboard locale
+
+This script set a Spanish keyboard. 
+- If you are using an English keyboard, edit the `openbsd_autoinstall_dwm` file and delete the line `setxkbmap es`
+- If you are using a non English keyboard, edit the `openbsd_autoinstall_dwm` file and change the line `setxkbmap es` to `sexkbmap <language\>
+
 ### Ready to use the script
 
 As a user, run these commands:
