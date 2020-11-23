@@ -47,8 +47,18 @@ Once the configuration is finished, you can delete the following directory and f
 - `config/`
 - `ubuntu_autoinstall_dwm`
 
-#### .xinitrc
+### .xinitrc
 
 - Should you decide to move the `suckless` directory somewhere else, don't forget to update the path for `dwm_bar.sh` on `.xinitrc`.
 - Should you decide to move the `wallpaper.jpg` file somewhere else, don't forget to update the path for `feh` on `.xinitrc`.
 
+### DWM key shortcuts
+- **Mod** + **Shift** + **Return**: Launch **st** terminal
+- **Mod** + **Shift** + **p**: Launch **dmenu**
+- **Mod** + **Shift** + **f**: Launch **Firefox** in window **2** 
+- **Mod** + **Shift** + **v**: Launch **VSCode** in window **3**
+- **Mod** + **Shift** + **l**: Launch **Leafpad** editor in window **3**
+- **Mod** + **Shift** + **b**: Launch **Brave** browser in window **4**
+- **Mod** + **Shift** + **i**: Launch **Inkscape** in window **5**
+
+Any PDF document will be open with **Zathura** in window **6**.
