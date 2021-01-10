@@ -54,5 +54,5 @@ export SEP2="]"
 while true
 do
   xsetroot -name "$(dwm_resources) $(dwm_date)"
-  sleep 1
+  sleep 60
 done

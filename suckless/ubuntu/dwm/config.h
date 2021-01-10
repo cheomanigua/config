@@ -19,7 +19,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "", "", "", "", "6", "7", "8", "9" };
+static const char *tags[] = { "1", "", "", "", "5", "", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -30,8 +30,8 @@ static const Rule rules[] = {
 	{ "Firefox",  NULL,       NULL,       1 << 1,       0,           -1 },
 	{ "Code",  NULL,    NULL,       1 << 2,       0,           -1 },
 	{ "Brave-browser",  NULL,       NULL,       1 << 3,       0,           -1 },
-	{ "Zathura",  NULL,    NULL,       1 << 4,       0,           -1 },
-	{ "Inkscape",  NULL,    NULL,       1 << 5,       0,           -1 },
+	{ "Inkscape",  NULL,    NULL,       1 << 4,       0,           -1 },
+	{ "Zathura",  NULL,    NULL,       1 << 5,       0,           -1 },
 };
 
 /* layout(s) */
@@ -66,6 +66,7 @@ static const char *webcmd[]  = { "firefox",  NULL };
 static const char *edcmd[]  = { "leafpad",  NULL };
 static const char *bravecmd[]  = { "brave-browser",  NULL };
 static const char *inkscapecmd[]  = { "inkscape",  NULL };
+static const char *godotcmd[]  = { "godot",  NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -96,6 +97,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_l, spawn,         {.v = edcmd } },
 	{ MODKEY|ShiftMask,             XK_b, spawn,         {.v = bravecmd } },
 	{ MODKEY|ShiftMask,             XK_i, spawn,         {.v = inkscapecmd } },
+	{ MODKEY|ShiftMask,             XK_g, spawn,         {.v = godotcmd } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
