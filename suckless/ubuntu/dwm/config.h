@@ -66,6 +66,7 @@ static const char *webcmd[]  = { "firefox",  NULL };
 static const char *edcmd[]  = { "leafpad",  NULL };
 static const char *bravecmd[]  = { "brave-browser",  NULL };
 static const char *inkscapecmd[]  = { "inkscape",  NULL };
+static const char *kritacmd[]  = { "krita",  NULL };
 static const char *godotcmd[]  = { "godot",  NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -92,11 +93,12 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_f, spawn,         {.v = webcmd } },
 	{ MODKEY|ShiftMask,             XK_v, spawn,         {.v = codecmd } },
+	{ MODKEY|ShiftMask,             XK_f, spawn,         {.v = webcmd } },
 	{ MODKEY|ShiftMask,             XK_l, spawn,         {.v = edcmd } },
 	{ MODKEY|ShiftMask,             XK_b, spawn,         {.v = bravecmd } },
 	{ MODKEY|ShiftMask,             XK_i, spawn,         {.v = inkscapecmd } },
+	{ MODKEY|ShiftMask,             XK_k, spawn,         {.v = kritacmd } },
 	{ MODKEY|ShiftMask,             XK_g, spawn,         {.v = godotcmd } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
