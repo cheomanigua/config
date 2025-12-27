@@ -127,7 +127,7 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)         -- Jump to prev error
     vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)         -- Jump to next error
 
-	-- Autocomplete: Ctrl + x + Ctrl + o
+	-- Autocomplete: Ctrl + x + o
   end,
 })
 
