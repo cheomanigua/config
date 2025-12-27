@@ -126,6 +126,8 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, opts) -- Show error details in popup
     vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)         -- Jump to prev error
     vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)         -- Jump to next error
+
+	-- Autocomplete: Ctrl + x + Ctrl + o
   end,
 })
 
